@@ -68,3 +68,11 @@ nav {
   background: rgb(255, 255, 255 / 50%);
   z-index: 10;
 }
+
+a {
+  color: var(--primary-color);
+  margin-right: 25px;
+  text-decoration: none;
+  font-weight: bold;
+  border-bottom: 3px solid transparent;
+}
