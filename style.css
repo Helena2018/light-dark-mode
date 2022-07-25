@@ -47,15 +47,7 @@ h1 {
 h2 {
   font-size: 32px;
   font-weight: normal;
-}
-
-@media screen and (max-width: 1000px) {
-  h1 {
-    font-size: 60px;
-  }
-  h2 {
-    font-size: 25px;
-  }
+  text-align: center;
 }
 
 /* Navigation */
@@ -75,4 +67,23 @@ a {
   text-decoration: none;
   font-weight: bold;
   border-bottom: 3px solid transparent;
+}
+
+a:hover,
+a:focus {
+  color: var(--on-background);
+  border-bottom: 3px solid;
+}
+
+@media screen and (max-width: 1000px) {
+  h1 {
+    font-size: 60px;
+  }
+  h2 {
+    font-size: 25px;
+  }
+
+  nav {
+    font-size: 18px;
+  }
 }
