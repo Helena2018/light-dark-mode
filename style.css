@@ -27,6 +27,7 @@ html {
 }
 
 body {
+  font-family: 'Comfortaa', sans-serif;
   margin: 0;
   color: var(--on-background);
   background-color: var(--background);
@@ -43,18 +44,21 @@ section {
 }
 
 h1 {
+  font-family: 'Kaushan Script',sans-serif;
   font-size: 100px;
   margin: 0;
 }
 
 h2 {
   font-size: 32px;
+  color: var(--on-background-alt);
   font-weight: normal;
   text-align: center;
 }
 
 /* Navigation */
 nav {
+  font-family: 'Oswald', sans-serif;
   position: fixed;
   width: 100vw;
   padding: 25px;
