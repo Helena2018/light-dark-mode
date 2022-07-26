@@ -82,16 +82,52 @@ a:focus {
   border-bottom: 3px solid;
 }
 
+/* About Container */
+.about-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  margin: 10px auto;
+  max-width: 1000px;
+}
+
+.about-container .image-container {
+  border: 1px solid var(--secondary-color);
+  border-radius: 5px;
+  width: 300px;
+  height: 400px;
+  margin-right: 20px;
+  padding: 5px;
+  box-shadow: 0 8px 8px 1px;
+}
+
+.image-container img {
+  width: 100%;
+}
+
+
+
 /* Media Query */
 @media screen and (max-width: 1000px) {
   h1 {
     font-size: 60px;
   }
+  
   h2 {
     font-size: 25px;
   }
 
   nav {
     font-size: 18px;
+  }
+
+  .about-container {
+    margin-left: 10px;
+  }
+
+  .about-container .image-container {
+    width: 260px;
+    height: 320px
   }
 }
