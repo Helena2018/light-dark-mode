@@ -189,6 +189,19 @@ p {
   color: var(--on-background);
 }
 
+/* Dark Mode Toggle */
+.theme-switch-wrapper {
+  display: flex;
+  align-items: center;
+  position: fixed;
+  right: 25px;
+  top: 30px;
+}
+
+.theme-switch-wrapper span {
+  
+}
+
 /* Media Query */
 @media screen and (max-width: 1200px) {
   h1 {
