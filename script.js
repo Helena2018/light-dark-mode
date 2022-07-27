@@ -8,7 +8,7 @@ const textBox = document.getElementById('text-box');
 
 // Dark Mode Styles
 function darkMode() {
-  // nav.style.backgroundColor = 'rgb(0 0 0 / 50%)';
+  nav.style.backgroundColor = 'rgb(0 0 0 / 50%)';
   textBox.style.backgroundColor = 'rgb(255 255 255 / 50%)';
   toggleIcon.children[0].textContent = 'Dark Mode';
   toggleIcon.children[1].classList.remove('fa-sun');
@@ -18,6 +18,18 @@ function darkMode() {
   image3.src = 'image/undraw_healthy_lifestyle_dark.svg'
 }
 
+// Light Mode Styles
+function lightMode() {
+  nav.style.backgroundColor = 'rgb(255 255 255 / 50%)';
+  textBox.style.backgroundColor = 'rgb(0 0 0 / 50%)';
+  toggleIcon.children[0].textContent = 'Light Mode';
+  toggleIcon.children[1].classList.remove('fa-moon');
+  toggleIcon.children[1].classList.add('fa-sun');
+  image1.src = 'image/undraw_happy_feeling_light.svg'
+  image2.src = 'image/undraw_office_snack_light.svg'
+  image3.src = 'image/undraw_healthy_lifestyle_light.svg'
+}
+
 //Switch Theme Dynamically
 function switchTheme(event) {
   if(event.target.checked) {
@@ -25,7 +37,7 @@ function switchTheme(event) {
     darkMode();
   } else {
     document.documentElement.setAttribute('data-theme', 'light')
-    // lightMode();
+    lightMode();
   }
 }
 
