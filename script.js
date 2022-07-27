@@ -11,7 +11,7 @@ function darkMode() {
   nav.style.backgroundColor = 'rgb(0 0 0 / 50%)';
   textBox.style.backgroundColor = 'rgb(255 255 255 / 50%)';
   toggleIcon.children[0].textContent = 'Dark Mode';
-  toggleIcon.children[1].classList.replace('fa-sun');
+  toggleIcon.children[1].classList.replace('fa-sun', 'fa-moon');
   image1.src = 'image/undraw_happy_feeling_dark.svg'
   image2.src = 'image/undraw_office_snack_dark.svg'
   image3.src = 'image/undraw_healthy_lifestyle_dark.svg'
@@ -22,8 +22,7 @@ function lightMode() {
   nav.style.backgroundColor = 'rgb(255 255 255 / 50%)';
   textBox.style.backgroundColor = 'rgb(0 0 0 / 50%)';
   toggleIcon.children[0].textContent = 'Light Mode';
-  toggleIcon.children[1].classList.remove('fa-moon');
-  toggleIcon.children[1].classList.add('fa-sun');
+  toggleIcon.children[1].classList.replace('fa-moon', 'fa-sun');
   image1.src = 'image/undraw_happy_feeling_light.svg'
   image2.src = 'image/undraw_office_snack_light.svg'
   image3.src = 'image/undraw_healthy_lifestyle_light.svg'
