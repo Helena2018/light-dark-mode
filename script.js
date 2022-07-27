@@ -39,10 +39,14 @@ function switchTheme(event) {
     darkMode();
   } else {
     document.documentElement.setAttribute('data-theme', 'light');
-    localStorage.setItem('theme', 'dark')
+    localStorage.setItem('theme', 'light')
     lightMode();
   }
 }
 
 // Event Listener
 toggleSwitch.addEventListener('change', switchTheme);
+
+// Check Local Storage For Theme
+const currentTheme = localStorage.getItem('theme')
+console.log(currentTheme)
