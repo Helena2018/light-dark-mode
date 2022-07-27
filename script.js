@@ -11,8 +11,7 @@ function darkMode() {
   nav.style.backgroundColor = 'rgb(0 0 0 / 50%)';
   textBox.style.backgroundColor = 'rgb(255 255 255 / 50%)';
   toggleIcon.children[0].textContent = 'Dark Mode';
-  toggleIcon.children[1].classList.remove('fa-sun');
-  toggleIcon.children[1].classList.add('fa-moon');
+  toggleIcon.children[1].classList.replace('fa-sun');
   image1.src = 'image/undraw_happy_feeling_dark.svg'
   image2.src = 'image/undraw_office_snack_dark.svg'
   image3.src = 'image/undraw_healthy_lifestyle_dark.svg'
