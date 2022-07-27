@@ -8,6 +8,7 @@ const textBox = document.getElementById('text-box');
 
 // Dark Mode Styles
 function darkMode() {
+  nav.style.backgroundColor = 'rgb(0 0 0 / 50%)';
   
 }
 
