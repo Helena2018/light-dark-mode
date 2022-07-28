@@ -21,18 +21,18 @@ function toggleLightDarkMode(isDark) {
   textBox.style.backgroundColor = isDark ? 'rgb(255 255 255 / 50%)' : 'rgb(0 0 0 / 50%)';
   toggleIcon.children[0].textContent = isDark ? 'Dark Mode' : 'Light Mode';
   isDark ? toggleIcon.children[1].classList.replace('fa-sun', 'fa-moon') : toggleIcon.children[1].classList.replace('fa-moon', 'fa-sun');
-  isDark ? imageMode('dark') : imageMode('light');
+  isDark ? imageMode(DARK_THEME) : imageMode(LIGHT_THEME);
 }
 
 //Switch Theme Dynamically
 function switchTheme(event) {
   if(event.target.checked) {
-    document.documentElement.setAttribute('data-theme', 'dark');
-    localStorage.setItem('theme', 'dark')
+    document.documentElement.setAttribute('data-theme', DARK_THEME);
+    localStorage.setItem('theme', DARK_THEME)
     toggleLightDarkMode(true);
   } else {
-    document.documentElement.setAttribute('data-theme', 'light');
-    localStorage.setItem('theme', 'light')
+    document.documentElement.setAttribute('data-theme', LIGHT_THEME);
+    localStorage.setItem('theme', LIGHT_THEME)
     toggleLightDarkMode(false);
   }
 }
@@ -45,7 +45,7 @@ const currentTheme = localStorage.getItem('theme')
 if(currentTheme) {
   document.documentElement.setAttribute('data-theme', currentTheme);
 
-  if(currentTheme === 'dark') {
+  if(currentTheme === DARK_THEME) {
     toggleSwitch.checked = true;
     toggleLightDarkMode(true);
   }
