@@ -6,6 +6,8 @@ const image2 = document.getElementById('image2');
 const image3 = document.getElementById('image3');
 const textBox = document.getElementById('text-box');
 
+const DARK_THEME = 'dark';
+const LIGHT_THEME = 'light';
 
 // Light and Dark Images 
 function imageMode(color) {
